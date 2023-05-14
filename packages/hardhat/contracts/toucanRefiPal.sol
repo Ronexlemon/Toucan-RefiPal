@@ -3,7 +3,7 @@ pragma solidity ^0.8.2;
 import "./refiInterface.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
-contract ToucanRefiPAL {
+contract ToucanRefiPal {
     RefiInterface refiInt;
 
     //bct: 0x4c5f90C50Ca9F849bb75D93a393A4e1B6E68Accb
@@ -15,8 +15,8 @@ contract ToucanRefiPAL {
         return refiInt.totalSupply();
     }
 
-    function getBalance() public view returns (uint) {
-        return refiInt.balanceOf(msg.sender);
+    function getBalance(address _token) public view returns (uint) {
+        return IERC20(_token).balanceOf(msg.sender);
     }
 
     function depositTCo2(address tc, uint amount) public {
@@ -75,11 +75,11 @@ contract ToucanRefiPAL {
         return refiInt.tokenBalances(tco2);
     }
 
-    function shareTokens(address _token, uint amount) public {
+    function shareTokens(address _token, address _to, uint amount) public {
         require(
             IERC20(_token).transferFrom(msg.sender, address(this), amount),
             "failed"
         );
-        require(IERC20(_token).transfer(msg.sender, amount), "failed");
+        require(IERC20(_token).transfer(_to, amount), "failed");
     }
 }

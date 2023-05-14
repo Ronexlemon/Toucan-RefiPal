@@ -9,7 +9,7 @@ const DepositPage = ()=>{
          <div className=" w-full bg-slate-800 h-screen bg-back fixed">
             <Navbar/>
             <div className=" mt-4">
-                <ShowBalance/>
+                {/* <ShowBalance/> */}
             </div>
             <div className="flex h-full justify-center items-center">
                 

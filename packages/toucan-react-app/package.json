@@ -21,7 +21,8 @@
     "react-icons": "^4.8.0",
     "react-router-dom": "^6.11.1",
     "toucan-sdk": "^1.0.4-beta",
-    "wagmi": "^0.12.2"
+    "wagmi": "^0.12.2",
+    "web3": "^1.10.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

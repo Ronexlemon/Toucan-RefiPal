@@ -79,13 +79,7 @@
 		"type": "function"
 	},
 	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "_token",
-				"type": "address"
-			}
-		],
+		"inputs": [],
 		"name": "getBalance",
 		"outputs": [
 			{

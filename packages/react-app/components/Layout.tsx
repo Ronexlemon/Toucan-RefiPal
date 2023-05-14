@@ -1,5 +1,5 @@
 import { FC, ReactNode } from "react";
-import Footer from "./Footer";
+import Navbar from "./Footer";
 import Header from "./Header";
 
 interface Props {
@@ -13,7 +13,7 @@ const Layout: FC<Props> = ({children}) => {
                 <div className="py-16 max-w-7xl mx-auto space-y-8 sm:px-6 lg:px-8">
                     {children}
                 </div>
-            <Footer />
+            <Navbar />
             </div>
         </>
     )
