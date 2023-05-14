@@ -5,6 +5,8 @@ import './App.css'
 import {BrowserRouter as Router,Routes,Route, BrowserRouter} from "react-router-dom"
 import LandingPage from './Pages/LandingPage'
 import DepositPage from './Pages/DepositPage'
+import SharePage from './Pages/Share'
+import RetireBTCPage from './Pages/RetireBTC'
 import "@rainbow-me/rainbowkit/styles.css"
 import {
   connectorsForWallets,
@@ -60,6 +62,8 @@ function App() {
           <Route path='/' element={ <LandingPage/>}/>
           <Route path='/home' element={ <LandingPage/>}/>
           <Route path='/deposit' element={ <DepositPage/>}/>
+          <Route path='/share' element={ <SharePage/>}/>
+          <Route path='/retire' element={ <RetireBTCPage/>}/>
         </Routes>
         </BrowserRouter>
        

@@ -11,8 +11,11 @@ export default function Navbar() {
             <button onClick={()=>{navigate("/home")}}>
                 Home
             </button>
-            <button onClick={()=>{navigate("/home")}}>
+            <button onClick={()=>{navigate("/retire")}}>
                 Retire
+            </button>
+            <button onClick={()=>{navigate("/share")}}>
+                Share
             </button>
             <button onClick={()=>{navigate("/deposit")}}>
                 Deposit

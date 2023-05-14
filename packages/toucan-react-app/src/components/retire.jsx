@@ -13,7 +13,7 @@ import { FaSpinner } from 'react-icons/fa';
 
 
 
-export default function DepositBTC() {
+export default function RetireBTC() {
     const [amount, setAmount] = useState();
     const [isLoading, setIsLoading] = useState(false);
     const {
