@@ -18,8 +18,8 @@ export default function ShowBalance() {
       const contractRead = useContractRead({
         address: ToucanCeloContractAddress,
         abi: ToucanAbi,
-        functionName: 'getBalance',
-        args: ["0x874069fa1eb16d44d622f2e0ca25eea172369bc1"]
+        functionName: 'getTotalSupply()',
+      
         
       })
       const getBalance = async()=>{
@@ -34,13 +34,13 @@ export default function ShowBalance() {
 
       },[contractRead]);
       
-      console.log("the data is",Number(contractRead.data));
+      console.log("the data is",parseFloat(Number(contractRead.data).toString()));
 
     return (
         <div className="h-14  w-3/4 ml-14">
             <div className="flex justify-around items-center">
-                <div> BTC: 3000000000</div>
-                <div className="">TC02: 3000000000</div>
+                <div> BTC Pool Value:{Number(contractRead.data)} </div>
+               
                 
             </div>
         </div>
