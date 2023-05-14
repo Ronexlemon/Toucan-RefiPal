@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 export default function Navbar() {
     const navigate = useNavigate();
     return (
-        <div className="h-14 bg-blue-400 flex justify-around items-center">
+        <div className="h-14 bg-slate-400 flex justify-around items-center">
             <button onClick={()=>{navigate("/home")}}>
                 Home
             </button>

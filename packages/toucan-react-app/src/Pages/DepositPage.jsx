@@ -4,8 +4,8 @@ import DepositBTC from "../components/depositBtc";
 
 const DepositPage = ()=>{
     return(
-        <>
-         <div className=" w-full bg-slate-800 h-screen">
+        
+         <div className=" w-full bg-slate-800 h-screen bg-back fixed">
             <Navbar/>
             <div className="flex h-full justify-center items-center">
                 
@@ -14,7 +14,7 @@ const DepositPage = ()=>{
             </div>
 
         </div>
-        </>
+        
        
     )
 }

@@ -6,8 +6,8 @@ export default {
   ],
   theme: {
     extend: {
-      backgroundColor:{
-        "back" : "url('../src/assets/refi.jpeg')"
+      backgroundImage:{
+        "back" : "url('../src/assets/back.jpg')"
       }
     },
   },
